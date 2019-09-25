@@ -57,6 +57,7 @@ public class StudentDAO{
 
     }
 
+    //add comment
     public boolean deleteStudent(StudentK s){
         return db.delete(StudentsDB.TABLE_NAME, "_id = ?", new String[]{"" + s.getId()}
         ) > 0;
